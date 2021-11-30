@@ -1,17 +1,15 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="flex flex-center bg-dark">
+    <log-table></log-table>
   </q-page>
 </template>
 
 <script>
+import LogTable from 'src/components/LogTable.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
+  components: { LogTable },
   name: 'PageIndex'
 })
 </script>
