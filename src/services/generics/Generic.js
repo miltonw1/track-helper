@@ -1,5 +1,5 @@
-import Service from "../Service"
-import { handle as h } from "../Response"
+import Service from '../Service'
+import { handle as h } from '../Response'
 
 /**
  * Generic CRUD service
@@ -8,12 +8,12 @@ class Generic extends Service {
   /**
    * @static {string} _url
    */
-  static _url = ""
+  static _url = ''
 
   /**
    * @static {string} _idProperty
    */
-  static _idProperty = "id"
+  static _idProperty = 'id'
 
   /**
    * Format the url acording the payload parameter.
@@ -22,7 +22,7 @@ class Generic extends Service {
    *
    * @returns {string}
    */
-  static url(parameter) {
+  static url (parameter) {
     const id = parameter[this._idProperty]
 
     const baseUrl = parameter
@@ -39,10 +39,10 @@ class Generic extends Service {
    *
    * @returns {Response}
    */
-  static async fetch() {
+  static async fetch () {
     return h(
       fetch(this.url(), {
-        headers: this.commonHeader(),
+        headers: this.commonHeader()
       })
     )
   }
@@ -54,10 +54,10 @@ class Generic extends Service {
    *
    * @returns {Response}
    */
-  static async get(payload) {
+  static async get (payload) {
     return h(
       fetch(this.url(payload), {
-        headers: this.commonHeader(),
+        headers: this.commonHeader()
       })
     )
   }
@@ -69,12 +69,12 @@ class Generic extends Service {
    *
    * @returns {Response}
    */
-  static async create(payload) {
+  static async create (payload) {
     return h(
       fetch(this.url(), {
         headers: this.commonHeader(),
-        method: "POST",
-        body: JSON.stringify(payload),
+        method: 'POST',
+        body: JSON.stringify(payload)
       })
     )
   }

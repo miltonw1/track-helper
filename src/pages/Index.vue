@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import LogTable from 'src/components/LogTable.vue';
-import { defineComponent } from 'vue';
+import LogTable from 'src/components/LogTable.vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   components: { LogTable },

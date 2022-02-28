@@ -1,13 +1,12 @@
 import Generic from './generics/Generic'
-import parsePayload from './generics/FormDataParsing'
-import Response, { handle as h } from './Response'
+// import parsePayload from './generics/FormDataParsing'
+// import Response, { handle as h } from './Response'
 import {
   FOOD_URL,
   FOODS_URL,
   FOODS_LIST_URL,
   FOODS_SEARCH_URL
 } from './api'
-
 
 export class FoodService extends Generic {
   static _url = FOOD_URL

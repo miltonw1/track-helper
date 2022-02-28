@@ -1,8 +1,8 @@
 {
   "name": "trackhelper",
   "version": "0.0.1",
-  "description": "An app for tracking nutrients and caloric intake",
-  "productName": "Track Helper",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
   "author": "Milton Wery <milton_st@hotmail.com>",
   "private": true,
   "scripts": {
@@ -13,17 +13,23 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
-    "pug": "^3.0.2",
     "quasar": "^2.0.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0",
     "vuex": "^4.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
     "eslint": "^7.14.0",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0"
+    "eslint-webpack-plugin": "^2.4.0",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
